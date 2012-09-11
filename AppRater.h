@@ -5,6 +5,10 @@
 //  Copyright (c) 2012 Oriol Blanc Gimeno. All rights reserved.
 //
 
-@interface AppRater : NSObject
+#import "AppRaterHeaders.h"
+
+@interface AppRater : NSObject <AppRater>
+
++ (void)takeOff:(NSString *)appId;
 
 @end
